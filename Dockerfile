@@ -69,7 +69,7 @@ RUN git clone -b shiken https://github.com/Team-techno/TechnoRobot /root/TechnoR
 WORKDIR /root/TechnoRobot
 
 #Copy config file to /root/TechnoRobot/TechnoRobot
-COPY ./AsunaRobot/sample_config.py ./TechnoRobot/config.py* /root/TechnoRobot/TechnoRobot/
+COPY ./TechnoRobot/sample_config.py ./TechnoRobot/config.py* /root/TechnoRobot/TechnoRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
