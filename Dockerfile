@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/TechnoRobot 
-RUN git clone -b shiken https://github.com/Team-techno/TechnoRobot /root/TechnoRobot
+RUN git clone -b techno https://github.com/Team-techno/TechnoRobot /root/TechnoRobot
 WORKDIR /root/TechnoRobot
 
 #Copy config file to /root/TechnoRobot/TechnoRobot
