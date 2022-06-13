@@ -29,15 +29,15 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    TOKEN = os.environ.get("TOKEN", None)
+    TOKEN = os.environ.get("TOKEN", "5255808345:AAGKqtfg9LLlUcdj5QoZdSGV1njPH0hZbyQ")
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", None))
+        OWNER_ID = int(os.environ.get("OWNER_ID", "5307899310"))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    JOIN_LOGGER = os.environ.get("JOIN_LOGGER", None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    JOIN_LOGGER = os.environ.get("JOIN_LOGGER", "Technobotsupport")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "Saury12p")
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
@@ -60,17 +60,17 @@ if ENV:
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
 
-    INFOPIC = bool(os.environ.get("INFOPIC", False))
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
+    INFOPIC = bool(os.environ.get("INFOPIC", True))
+    EVENT_LOGS = os.environ.get("EVENT_LOGS", "@technobotsupport")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
-    API_ID = os.environ.get("API_ID", None)
-    API_HASH = os.environ.get("API_HASH", None)
-    BOT_ID = int(os.environ.get("BOT_ID", None))
-    DB_URI = os.environ.get("DATABASE_URL")
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+    API_ID = os.environ.get("API_ID", "19618413")
+    API_HASH = os.environ.get("API_HASH", "917e4ae3d642dcdfcbcff179ff9cdd8c")
+    BOT_ID = int(os.environ.get("BOT_ID", "5255808345"))
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://alxfktvkedpnrc:732b88327962d575971b3e3fad603a3b5b859b5700bc7eeda2293c995e4df0ae@ec2-44-206-96-9.compute-1.amazonaws.com:5432/d1pfsi3vsktcfi")
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://userbotmusic:techno@cluster0.wqede.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -88,7 +88,7 @@ if ENV:
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     KUKI_API = os.environ.get("KUKI_API", None)
     WALL_API = os.environ.get("WALL_API", None)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", )
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
 
