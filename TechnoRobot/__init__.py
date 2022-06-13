@@ -88,7 +88,7 @@ if ENV:
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     KUKI_API = os.environ.get("KUKI_API", None)
     WALL_API = os.environ.get("WALL_API", None)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", )
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "Technobotsupport")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
 
@@ -100,7 +100,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from AsunaRobot.config import Development as Config
+    from TechnoRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
