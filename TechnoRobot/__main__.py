@@ -457,19 +457,22 @@ def donate_arpit_about_callback(update, context):
     query = update.callback_query
     if query.data == "donation_arpit":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Techno*
-                 \nHere is the [Source Code](https://github.com/Team-techno) .""",
+            text=""" You Have To Donate Us, Cool!!
+You Can Donate Any Amount, Big Or Small, It Will Completely Depend On You.
+
+ Contact Our Owner - @TheUnknownDev
+You Can Also Tell Us On @ByteBotsSupport """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                    InlineKeyboardButton(text="Go Back", callback_data="donate_arpit_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "source_back":
+    elif query.data == "donate_arpit_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
