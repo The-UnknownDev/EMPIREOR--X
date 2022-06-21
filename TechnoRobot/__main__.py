@@ -489,8 +489,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Techno*
-                 \nHere is the [Source Code](https://github.com/Team-techno) .""",
+            text=""" Piro Spotted
+                 \nSorry But The Source Code Is Private  = [MORE INFO](https://t.me/TheByteBots/9) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
