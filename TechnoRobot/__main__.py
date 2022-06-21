@@ -101,6 +101,18 @@ buttons = [
             text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
+    
+    #changed by @Arpit_Chaurasiya fuck off kangers
+    
+    [
+        InlineKeyboardButton(text="MUSIC", callback_data="music_"),
+        InlineKeyboardButton(
+            text="DONATE", text="callback_data="donate_arpit"
+        ),
+    ],
+    
+    #deadend
+    
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
     ],
@@ -397,25 +409,53 @@ def amelia_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-
+#modified by @arpit_chaurasiya Fuck off kangers
 
 @run_async
-def Source_about_callback(update, context):
+def music__callback(update, context):
     query = update.callback_query
-    if query.data == "source_":
+    if query.data == "music_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Empireor X*
-                 \nSORRY BUT THE SOURCE CODE THIS BOT IS PRIVATE
-                 \nThanks [Click Here For More Details](https://t.me/TheByteBots/9) .""",
+            text=""" =>> Song/Video Playing 🎧 
+
+/n❍ /play <song name> - play song you requested
+/n❍ /vplay <song name or video name> -play song or video you requested
+/n❍ /playlist - Show now playing list
+/n❍ /current - Show now playing
+/n❍ /song <song name> - download songs you want quickly
+/n❍ /search <query> - search videos on youtube with details
+/n❍ /video <video name> - download videos you want quickly
+
+/n=>> Admins only
+/n❍ /player - open music player settings panel
+/n❍ /pause - pause song play
+/n❍ /resume - resume song play
+/n❍ /skip - play next song
+/n❍ /end - stop music play
+/n❍ /admincache - Refresh admin list
+
+/n=>>   Use
+/n1) Add [Empireor]() In Your Group To Admin With All Permission
+/n2) Add Assistant I'd To Your Group [Click Here](https://t.me/EmpireorXMusic)
+
+/n👉If You Face Any Problem Report Here - @ByteBotsSupport 
+
+/nThanks❤️
+/n@Arpit_Chaurasiya """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                    InlineKeyboardButton(text="Back", callback_data="music_back")
                  ]
                 ]
             ),
+        )
+
+#deadend
+
+C
         )
     elif query.data == "source_back":
         query.message.edit_text(
