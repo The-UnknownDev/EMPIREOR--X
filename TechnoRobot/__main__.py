@@ -107,7 +107,7 @@ buttons = [
     [
         InlineKeyboardButton(text="MUSIC", callback_data="music_"),
         InlineKeyboardButton(
-            text="DONATE", text="callback_data="donate_arpit"
+            text="DONATE", callback_data="donate_arpit"
         ),
     ],
     
