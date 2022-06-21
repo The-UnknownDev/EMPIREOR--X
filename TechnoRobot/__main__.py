@@ -452,10 +452,51 @@ def music__callback(update, context):
                 ]
             ),
         )
-
+@run_async
+def donate_arpit_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "donation_arpit":
+        query.message.edit_text(
+            text=""" Hi..🤗 I'm *Techno*
+                 \nHere is the [Source Code](https://github.com/Team-techno) .""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "source_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=False,
+        )
+        
+        
 #deadend
 
-C
+@run_async
+def Source_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "source_":
+        query.message.edit_text(
+            text=""" Hi..🤗 I'm *Techno*
+                 \nHere is the [Source Code](https://github.com/Team-techno) .""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                 ]
+                ]
+            ),
         )
     elif query.data == "source_back":
         query.message.edit_text(
