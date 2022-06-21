@@ -74,17 +74,20 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [Techno](https://telegra.ph/file/0279bc457fd93a81dc24d.jpg) 」────
-ʜᴇʏ! {}
-ɪ ᴀᴍ Techno Robot ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
+────「 [Empireor X](https://telegra.ph/file/0279bc457fd93a81dc24d.jpg) 」────
+Hi,  My Name is Empireor X - An Advanced Group Management Bot Which Works On Latest Technology.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-I have lots of handy features such as:
-‣ Warning system
-‣ Artificial intelligence
-‣ Flood control system
-‣ Note keeping system
-‣ Filters keeping system
-‣ Approvals and much more.
+‣ Warning and protection system
+‣ Anti Porn, flood & spam control
+‣ Notes, filter, welcome & blacklists 
+‣ 24×7 > 99.9% uptime guaranty
+‣ Approvals and much more
+
+‣ Empireor X also can play Music + Video in your Group; Supporting platforms #Try • /music. (Unstable If Any Problem Occurs Then Use --)
+
+So what are you waiting for?
+Add me in your groups and give me full rights to make me function well.
+
 """
 
 buttons = [
@@ -228,10 +231,10 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/Technobotsupport"), 
+                [[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/ByteBotsSupport"), 
                  ],
                  [
-                  InlineKeyboardButton(text="ᴀssɪsᴛᴀɴᴛ", url="t.me/Technomusicassistant"),]]              
+                  InlineKeyboardButton(text="ᴀssɪsᴛᴀɴᴛ", url="t.me/EmpireorXMusic"),]]              
                   
             ),
         )
@@ -401,8 +404,9 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Techno*
-                 \nHere is the [Source Code](https://github.com/Team-techno) .""",
+            text=""" Hi..🤗 I'm *Empireor X*
+                 \nSORRY BUT THE SOURCE CODE THIS BOT IS PRIVATE
+                 \nThanks [Click Here For More Details](https://t.me/TheByteBots/9) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -649,7 +653,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 5014206894 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
